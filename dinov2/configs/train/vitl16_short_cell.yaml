@@ -1,0 +1,17 @@
+# this corresponds to the default config
+train:
+  dataset_path: CellDataset:root=/nasdata2/dataset/dino/v2/CellDatasetCropped
+  batch_size_per_gpu: 64
+student:
+  block_chunks: 4
+
+crops:
+  global_crops_scale:
+  - 0.5
+  - 1.0
+  local_crops_number: 8
+  local_crops_scale:
+  - 0.05
+  - 0.5
+  global_crops_size: 224
+  local_crops_size: 96
